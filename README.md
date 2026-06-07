@@ -1,8 +1,8 @@
 # Project Health Checker Demo
 
-This is a safe npm package demo for AI agent supply-chain awareness.
+This is a safe npm package demo for AI coding assistant supply-chain awareness.
 
-I made this after seeing discussions about AI coding agents installing npm packages while completing tasks. The goal was to test, in a harmless way, whether a normal-looking setup instruction could cause an AI agent to install an external package and execute code inside its workspace.
+I made this after seeing discussions about AI coding assistants installing npm packages while completing tasks. The goal was to test, in a harmless way, whether a normal-looking setup instruction could cause an AI assistant to install an external package and execute code inside its workspace.
 
 ## What it does
 
@@ -32,17 +32,19 @@ CODE_EXECUTION_PROOF.txt
 
 This demonstrates that an npm package installed from a GitHub repo can execute code during installation through a `postinstall` lifecycle script.
 
-In my demo, this package was installed by an AI coding agent after it followed a normal-looking setup guide. The setup guide was meant to imitate something an agent might read while browsing a README, documentation page, tutorial, repository, or webpage.
+In my demo, this package was installed by an AI coding assistant after it followed a normal-looking setup guide. The setup guide was meant to imitate something an AI assistant might read while browsing a README, documentation page, tutorial, repository, or webpage.
 
 The important part is not the proof file itself. The important part is the chain:
 
 ```text
-Agent reads setup instructions
-→ Agent runs npm install
+AI assistant reads setup instructions
+→ AI assistant runs npm install
 → npm downloads an external package
 → npm runs the package's postinstall script
-→ Code executes inside the agent's workspace
+→ Code executes inside the assistant's workspace
 ```
+
+In a real scenario, that workspace could contain project files, uploaded files, notes, source code, or other session context. This demo does not access any of that, but it shows why setup instructions should not be blindly trusted.
 
 ## Safety
 
