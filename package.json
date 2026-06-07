@@ -1,0 +1,16 @@
+{
+  "name": "project-health-checker-demo",
+  "version": "1.0.0",
+  "description": "Safe demo showing npm postinstall code execution during package installation",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "keywords": [
+    "npm",
+    "postinstall",
+    "ai-agent-security",
+    "supply-chain-demo"
+  ],
+  "author": "Lincoln Goh",
+  "license": "MIT"
+}
